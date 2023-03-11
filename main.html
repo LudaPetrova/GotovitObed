@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gotovit obed</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@600;900&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+	<style>
+		body {
+			max-width: 900px;
+			background: #D3CEDF;
+			font-family: 'Sofia Sans Semi Condensed', sans-serif;
+		}
+
+
+		div {
+			width: 100vw;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		h3 {
+			font-size: 1.5rem;
+			color: #748DA6;
+		}
+
+		h2 {
+			font-size: 3.5rem;
+			color: #7868E6;
+		}
+
+		h1 {
+			font-size: 5.5rem;
+			color: #14279B;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<h3>Пекарня Good bread представляє:</h3>
+		<h2 class='animate__animated animate__zoomIn'>Обід сьогодні готує</h2>
+		<h1 class='animate__animated animate__zoomIn'></h1>
+
+	</div>
+	<script>
+
+		var rebyata = ['Наташа', 'Вітя', 'Тарас', 'Рома', 'Бодя', 'Костя', 'Оксана', 'Діма', 'Міша', 'Іван', 'Пилипп', 'Даня', 'Олег', 'Віталя', 'Катя', 'Волошка', 'Ростік', 'Саша', 'Денис', 'Ваня'];
+
+		var gotovitObed = rebyata[Math.round(Math.random() * rebyata.length)];
+
+		var gotovit = document.querySelector('h1');
+		gotovit.innerText = gotovitObed;
+
+	</script>
+
+</body>
+
+</html>
